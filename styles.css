@@ -1,0 +1,263 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 10px;
+    padding: 0;
+    background-color: #027375;
+	color: #ffffff;
+}
+
+header {
+    background-color: #027375;
+    color: #ffffff;
+    padding: 10px;
+	padding-top: 30px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-image {
+    height: 50px;
+    margin-right: 20px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+	align-items: center; /* Center vertically */
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin-right: 10px;
+}
+
+nav ul li a {
+    display: inline-block;
+    background-color: #333;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav ul li a.active {
+    color: #000000;
+    background-color: #cb6ce6;
+}
+
+nav ul li a:hover {
+    background-color: #ff5757;
+    color: white;
+}
+
+section {
+    padding: 20px;
+    margin-top: 20px; /* Add space between the header and content */
+    max-width: 1200px; /* Optional: Restrict width for better readability */
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #ffffff; /* Optional: Add background color if needed */
+    color: #000000; /* Optional: Black text for better contrast */
+    border-radius: 8px; /* Optional: Add rounded corners to content area */
+    padding: 30px; /* Adjust padding for content inside the section */
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0; /* More padding for a defined footer */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    position: relative;
+    bottom: 0;
+    width: 100%;
+	border-radius: 8px;
+}
+
+footer .social-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	margin-bottom: 10px;
+}
+
+footer .social-media a {
+    margin: 20px; /* Increase the horizontal spacing between icons */
+    color: white;
+    font-size: 24px; /* Adjust icon size if needed */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer .social-media a:hover {
+    color: #dff740; /* Optional: Change the color on hover */
+}
+
+.footer-email {
+    margin-top: 10px; /* Optional: Add space above the email */
+    display: block; /* Ensures the email is treated as a block element */
+}
+
+.contact-button {
+    display: inline-block; /* Ensures it behaves like a button */
+    padding: 10px 20px; /* Adjust padding as needed */
+    background-color: #333; /* Button background color */
+    color: #ffffff; /* Text color */
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Font size */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+	text-align: center;
+	margin-left: 40px;
+}
+
+.contact-button:hover {
+    background-color: #ff5757;; /* Darker shade on hover */
+	color: #000000;
+}
+
+.submit-button {
+    background-color: #027375; /* Button background color */
+    color: #ffffff; /* Text color */
+    border: none; /* Remove default border */
+    padding: 10px 20px; /* Adjust padding as needed */
+    font-size: 16px; /* Font size */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Change cursor to pointer */
+	padding-top: 20px;
+}
+
+.submit-button:hover {
+    background-color: #dff740; /* Darker shade on hover */
+	color: #000000;
+}
+
+#contact {
+    border: 5px solid blue;
+    padding: 20px;
+    margin: 20px;
+}
+
+.form-row {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"], input[type="email"], input[type="number"], textarea {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
+
+/* For smaller screens */
+@media (max-width: 768px) {
+    section {
+        padding: 15px; /* Adjust padding for smaller screens */
+        margin-top: 15px; /* Reduce margin on top */
+    }
+
+.cart-summary-box {
+    background-color: white; /* White background */
+    border: 1px solid black; /* 1pt black border */
+    padding: 15px; /* Padding inside the box */
+    margin: 20px 0; /* Space around the box */
+    border-radius: 5px; /* Optional: Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Subtle shadow for depth */
+}
+
+.gallery-container {
+    overflow: hidden; /* Hide overflow */
+    width: 100%; /* Set the width of the gallery */
+}
+
+.gallery {
+    display: flex; /* Use flexbox to arrange images in a row */
+    animation: scroll 20s linear infinite; /* Animation */
+}
+
+.gallery img {
+    width: auto; /* Make images responsive */
+    height: 200px; /* Maintain aspect ratio */
+    flex-shrink: 0; /* Prevent images from shrinking */
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%); /* Move to the left */
+    }
+}
+
+/* Pause the animation on hover */
+.gallery-container:hover .gallery {
+    animation-play-state: paused; /* Pause the animation */
+}
+/* Centered image styles */
+.centered-image {
+    text-align: center; /* Center the content */
+    margin: 20px 0; /* Space above and below */
+}
+
+.centered-image img {
+    max-width: 100%; /* Make sure it fits the screen */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.page-content {
+    max-width: 800px; /* Adjust the width to your preference */
+    margin: 20px auto; /* Centers the box */
+    background-color: white; /* White background */
+    border: 2pt solid #afeff0; /* 2pt border with color #afeff0 */
+    padding: 20px; /* Adds padding inside the box */
+    border-radius: 10px; /* Optional: adds rounded corners */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow for depth */
+}
